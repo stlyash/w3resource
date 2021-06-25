@@ -1,3 +1,10 @@
+Click [here](https://www.w3resource.com/cpp-exercises/basic/index.php?passed=passed) to see the questions.
+Thank you for visting this repo.
+<br>
+<br>
+The solutions togther with the Questions are given below - 
+<br>
+<br>
 1. Write a program in C++ to print a welcome text in a separate line.
 
 ```cpp
@@ -11,11 +18,7 @@ int main(void)
 
 ```
 
-2. Write a program in C++ to print the sum of two numbers. Go to the editor
-Sample Output:
-Print the sum of two numbers :
------------------------------------
-The sum of 29 and 30 is : 59
+2. Write a program in C++ to print the sum of two numbers.
 ```cpp
 #include<iostream>
 using namespace std;
@@ -27,19 +30,24 @@ int main(void)
 ```
 
 3. Write a program in C++ to find Size of fundamental data types. Go to the editor
-Sample Output:
-Find Size of fundamental data types :
-------------------------------------------
-The sizeof(char) is : 1 bytes
-The sizeof(short) is : 2 bytes
-The sizeof(int) is : 4 bytes
-The sizeof(long) is : 8 bytes
-The sizeof(long long) is : 8 bytes
-The sizeof(float) is : 4 bytes
-The sizeof(double) is : 8 bytes
-The sizeof(long double) is : 16 bytes
-The sizeof(bool) is : 1 bytes
-Click me to see the sample solution
+
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    cout<<"The sizeof(char) is : "<<sizeof(char)<<endl;
+    cout<<"The sizeof(short) is : "<<sizeof(short)<<endl;
+    cout<<"The sizeof(int) is : "<<sizeof(int)<<endl;
+    cout<<"The sizeof(long) is : "<<sizeof(long)<<endl;
+    cout<<"The sizeof(long long) is : "<<sizeof(long long)<<endl;
+    cout<<"The sizeof(float) is : "<<sizeof(float)<<endl;
+    cout<<"The sizeof(double) is : "<<sizeof(double)<<endl;
+    cout<<"The sizeof(long double) is : "<<sizeof(long double)<<endl;
+    cout<<"The sizeof(bool) is : "<<sizeof(bool)<<endl;
+}
+
+```
 
 4. Write a program in C++ to print the sum of two numbers using variables. Go to the editor
 Print the sum of two numbers :
