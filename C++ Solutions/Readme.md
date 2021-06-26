@@ -483,6 +483,65 @@ Click me to see the sample solution
 
 41. Write a program in C++ to print an American flag on the screen. Go to the editor
 Sample Output:
+
+```cpp
+
+// Indian flag first
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(void)
+{
+
+    // kesariya
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 90; j ++)
+        {
+            cout<<"=";
+        }
+        cout<<endl;
+    }
+
+    int circle_radius = 9; // or whatever you want
+    float console_ratio = 4.0/3.0;
+    float a = console_ratio*circle_radius;
+    float b = circle_radius;
+    
+    //Safed
+    for (int y = -circle_radius; y <= circle_radius; y++)
+    {
+        for (int i = 0; i < 30; i ++)
+        {
+            cout<<" ";
+        }
+        for (int x = -console_ratio*circle_radius; x <= console_ratio*circle_radius; x++)
+        {
+            float d = (x/a)*(x/a) + (y/b)*(y/b);
+            if (d > 0.90 && d < 1.1)
+            {
+                cout << "*";
+            }
+            else
+            {
+                 cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    // Hara
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 90; j ++)
+        {
+            cout<<"#";
+        }
+        cout<<endl;
+    }
+}
+
+```
  Print the American flag:                                              
 -----------------------------                                          
 * * * * * * ==================================                         
