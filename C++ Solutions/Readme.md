@@ -50,10 +50,17 @@ int main(void)
 ```
 
 4. Write a program in C++ to print the sum of two numbers using variables. Go to the editor
-Print the sum of two numbers :
------------------------------------
-The sum of 29 and 30 is : 59
-Click me to see the sample solution
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int n1 = 29;
+    int n2 = 30;
+    int sum = 59;
+    cout<<"The sum of "<<n1<<" and "<<n2<<" is : "<<sum<<endl;
+}
+```
 
 5. Write a program in C++ to check the upper and lower limits of integer. Go to the editor
 Expected Output:
@@ -212,15 +219,29 @@ The area of the rectangle is : 150
 The perimeter of the rectangle is : 50
 Click me to see the sample solution
 
-18. Write a program in C++ to find the area of any triangle using Heron's Formula. Go to the editor
-Sample Output:
-Find the area of any triangle using Heron's Formula :
-----------------------------------------------------------
-Input the length of 1st side of the triangle : 5
-Input the length of 2nd side of the triangle : 5
-Input the length of 3rd side of the triangle : 5
-The area of the triangle is : 10.8253
-Click me to see the sample solution
+18. Write a program in C++ to find the area of any triangle using Heron's Formula.
+```cpp
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(void)
+{
+    double s1,s2,s3;
+    cout<<"Input the length of 1st side of the triangle : ";
+    cin>>s1;
+    cout<<"Input the length of 1st side of the triangle : ";
+    cin>>s2;
+    cout<<"Input the length of 1st side of the triangle : ";
+    cin>>s3;
+    
+    double sPeri = (s1 + s2 + s3) / 2;
+    double area = sqrt(sPeri * (sPeri - s1) * (sPeri - s2) * (sPeri - s3));
+    
+    printf("The area of the triangle is : %.2f\n",area);
+    
+}
+
+```
 
 19. Write a program in C++ to find the area and circumference of a circle. Go to the editor
 Sample Output:
@@ -232,13 +253,23 @@ The circumference of the circle is : 31.4159
 Click me to see the sample solution
 
 20. Write a program in C++ to convert temperature in Celsius to Fahrenheit. Go to the editor
-Sample Output:
-Convert temperature in Celsius to Fahrenheit :
----------------------------------------------------
-Input the temperature in Celsius : 35
-The temperature in Celsius : 35
-The temperature in Fahrenheit : 95
-Click me to see the sample solution
+```cpp
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(void)
+{
+    double c,f;
+    cout<<"Input the temperature in Celsius : ";
+    cin>>c;
+    cout<<"The temperature in Celsius : "<<c<<endl;
+    
+    f = (c * 9/5) + 32;
+    
+    cout<<"The temperature in Fahrenheit : "<<f<<endl;
+    
+}
+```
 
 21. Write a program in C++ to convert temperature in Fahrenheit to Celsius. Go to the editor
 Sample Output:
