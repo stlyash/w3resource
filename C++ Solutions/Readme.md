@@ -165,25 +165,38 @@ Result of 3rd expression is : 12
 Result of 4th expression is : 3
 Click me to see the sample solution
 
-12. Write a program in C++ to add two numbers accept through keyboard. Go to the editor
-Sample Output:
-Sum of two numbers :
--------------------------
-Input 1st number : 25
-Input 2nd number : 39
-The sum of the numbers is : 64
-Click me to see the sample solution
-
-13. Write a program in C++ to swap two numbers. Go to the editor
-Sample Output:
-Swap two numbers :
------------------------
-Input 1st number : 25
-Input 2nd number : 39
-After swapping the 1st number is : 39
-After swapping the 2nd number is : 25
-Click me to see the sample solution
-
+12. Write a program in C++ to add two numbers accept through keyboard.
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int a, b;
+    cout<<"Input 1st number: ";
+    cin>>a;
+    cout<<"Input 2nd number: ";
+    cin>>b;
+    cout<<"The sum of the numbers is: "<< a + b << endl;
+}
+```
+13. Write a program in C++ to swap two numbers. 
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int a, b, c;
+    cout<<"Input 1st number: ";
+    cin>>a;
+    cout<<"Input 2nd number: ";
+    cin>>b;
+    c = a;
+    a = b;
+    b = c;
+    cout<<"After swapping the 1st number is: "<< a <<endl;
+    cout<<"After swapping the 2nd number is: "<< b <<endl;
+}
+```
 14. Write a program in C++ to calculate the volume of a sphere. Go to the editor
 Sample Output:
 Calculate the volume of a sphere :
