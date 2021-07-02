@@ -1,4 +1,6 @@
-Click [here](https://www.w3resource.com/cpp-exercises/basic/index.php?passed=passed) to see the questions.
+<h3 align="center">Special Thanks to - </h3>
+<h1 align="center"> Mithailaal</h1>
+Click https://www.w3resource.com/cpp-exercises/basic/index.php?passed=passed to see the questions.
 Thank you for visting this repo.
 <br>
 <br>
@@ -197,41 +199,64 @@ int main(void)
     cout<<"After swapping the 2nd number is: "<< b <<endl;
 }
 ```
-14. Write a program in C++ to calculate the volume of a sphere. Go to the editor
-Sample Output:
-Calculate the volume of a sphere :
----------------------------------------
-Input the radius of a sphere : 6
-The volume of a sphere is : 904.32
-Click me to see the sample solution
-
-15. Write a program in C++ to calculate the volume of a cube. Go to the editor
-Sample Output:
-Calculate the volume of a cube :
----------------------------------------
-Input the side of a cube : 5
-The volume of a cube is : 125
-Click me to see the sample solution
-
-16. Write a program in C++ to calculate the volume of a cylinder. Go to the editor
-Sample Output:
-Calculate the volume of a cylinder :
------------------------------------------
-Input the radius of the cylinder : 6
-Input the height of the cylinder : 8
-The volume of a cylinder is : 904.32
-Click me to see the sample solution
-
-17. Write a program in C++ to find the Area and Perimeter of a Rectangle. Go to the editor
-Sample Output:
-Find the Area and Perimeter of a Rectangle :
--------------------------------------------------
-Input the length of the rectangle : 10
-Input the width of the rectangle : 15
-The area of the rectangle is : 150
-The perimeter of the rectangle is : 50
-Click me to see the sample solution
-
+14. Write a program in C++ to calculate the volume of a sphere. 
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int r, v;
+    cout<<"Input radius of the Sphere: ";
+    cin>>r;
+    v = (4/3)*3.14*r*r*r;
+    cout<<"Volume of the Sphere is: "<< v <<endl;
+}
+```
+15. Write a program in C++ to calculate the volume of a cube. 
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int r, v;
+    cout<<"Input side of the cube: ";
+    cin>>r;
+    v = r*r*r;
+    cout<<"Volume of the Cube is: "<< v <<endl;
+}
+```
+16. Write a program in C++ to calculate the volume of a cylinder.
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int r, h, v;
+    cout<<"Input radius of the Cylinder: ";
+    cin>>r;
+    cout<<"Input height of the Cylinder: ";
+    cin>>h;
+    v = 2 * 3.14 * r * h;
+    cout<<"Volume of the Cylinder is: "<< v <<endl;
+}
+```
+17. Write a program in C++ to find the Area and Perimeter of a Rectangle. 
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int l, b, p, a;
+    cout<<"Input Length of the rectangle: ";
+    cin>>l;
+    cout<<"Input Width of the rectangle: ";
+    cin>>b;
+    a = l * b;
+    p = 2 * (l + b);
+    cout<<"The area of the rectangle is : "<< a <<endl;
+    cout<<"The perimeter of the rectangle is : "<< p <<endl;
+}
+```
 18. Write a program in C++ to find the area of any triangle using Heron's Formula.
 ```cpp
 #include<iostream>
