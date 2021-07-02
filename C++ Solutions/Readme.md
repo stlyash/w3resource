@@ -281,15 +281,24 @@ int main(void)
 
 ```
 
-19. Write a program in C++ to find the area and circumference of a circle. Go to the editor
-Sample Output:
-Find the area and circumference of any circle :
-----------------------------------------------------
-Input the radius(1/2 of diameter) of a circle : 5
-The area of the circle is : 78.5397
-The circumference of the circle is : 31.4159
-Click me to see the sample solution
+19. Write a program in C++ to find the area and circumference of a circle. 
+```cpp
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(void)
+{
+    double r, a, c;
+    cout<<"Input the radius(1/2 of diameter) of a circle :";
+    cin>>r;
+    a = 3.14*r*r;
+    c = 2*3.14*r;
+    printf("The area of the circle is : %.4f\n", a);
+    printf("The circumference of the circle is : %.4f\n", c);
+    
+}
 
+```
 20. Write a program in C++ to convert temperature in Celsius to Fahrenheit. Go to the editor
 ```cpp
 #include<iostream>
