@@ -318,24 +318,36 @@ int main(void)
 }
 ```
 
-21. Write a program in C++ to convert temperature in Fahrenheit to Celsius. Go to the editor
-Sample Output:
-Convert temperature in Fahrenheit to Celsius :
----------------------------------------------------
-Input the temperature in Fahrenheit : 95
-The temperature in Fahrenheit : 95
-The temperature in Celsius : 35
-Click me to see the sample solution
-
-22. Write a program in C++ to find the third angle of a triangle. Go to the editor
-Sample Output:
-Find the third angle of a triangle :
------------------------------------------
-Input the 1st angle of the triangle : 30
-Input the 2nd angle of the triangle : 60
-The 3rd of the triangle is : 90
-Click me to see the sample solution
-
+21. Write a program in C++ to convert temperature in Fahrenheit to Celsius.
+```cpp
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(void)
+{
+    double c,f;
+    cout<<"Input the temperature in Fahrenheit: ";
+    cin>>f
+    c = 5 * (f - 32) / 9;
+    cout<<"The temperature in Celsius :"<<c<<endl;
+}
+```
+22. Write a program in C++ to find the third angle of a triangle.
+```cpp
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(void)
+{
+    int f,s,t;
+    cout<<"Input the 1st angle of the triangle :";
+    cin>>f;
+    cout<<"Input the 2nd angle of the triangle :";
+    cin>>s;
+    t = 180 - f - s;
+    cout<<"The 3rd of the triangle is :"<<t<endl;
+}
+```
 23. Write a program in C++ that converts kilometers per hour to miles per hour. Go to the editor
 Sample Output:
 Convert kilometers per hour to miles per hour :
