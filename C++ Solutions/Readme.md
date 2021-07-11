@@ -348,13 +348,19 @@ int main(void)
     cout<<"The 3rd of the triangle is :"<<t<endl;
 }
 ```
-23. Write a program in C++ that converts kilometers per hour to miles per hour. Go to the editor
-Sample Output:
-Convert kilometers per hour to miles per hour :
-----------------------------------------------------
-Input the distance in kilometer : 25
-The 25 Km./hr. means 15.5343 Miles/hr.
-Click me to see the sample solution
+23. Write a program in C++ that converts kilometers per hour to miles per hour.
+```cpp
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(void)
+{
+    int k,m;
+    cout<<"Input the speed in kmph: ";
+    cin>>k;
+    cout<<"The "<<k<<" Km./hr. means "<<(k * 0.621371)<<" Miles/hr."<<endl;
+}
+```
 
 24. Write a program in C++ to convert temperature in Kelvin to Fahrenheit. Go to the editor
 Sample Output:
