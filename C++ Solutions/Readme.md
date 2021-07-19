@@ -808,11 +808,36 @@ Input the 2nd binary number: 0011
 The sum of two binary numbers is: 1101
 Click me to see the sample solution
 
-61. Write a C++ program to swap first and last digits of any number. Go to the editor
-Sample Output:
-Input any number: 12345
-The number after swapping the first and last digits are: 52341
-Click me to see the sample solution
+61. Write a C++ program to swap first and last digits of any number.
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    string n, f, l;
+    int lind;
+    cout<<"Enter the number: ";
+    cin>>n;
+    f = n[0];
+    
+    for (int i = 0; n[i] != '\0'; i++)
+    {
+        if (n[i+1] == '\0')
+            {
+                l = n[i];
+                lind = i;
+            }
+    }
+
+    cout<<l;
+    for (int j = 1; j < lind; j++)
+    {
+        cout<<n[j];
+    }
+    cout<<f<<endl;
+
+}
+```
 
 62. Write a C++ program to which reads an given integer n and prints a twin prime which has the maximum size among twin primes less than or equals to n. Go to the editor
 According to wikipedia "A twin prime is a prime number that is either 2 less or 2 more than another prime number" for example, either member of the twin prime pair (41, 43). In other words, a twin prime is a prime that has a prime gap of two".
@@ -821,16 +846,73 @@ Click me to see the sample solution
 63. Write a C++ program which prints three highest numbers from a list of numbers in descending order. Go to the editor
 Click me to see the sample solution
 
-64. Write a C++ program to compute the sum of the two given integers and count the number of digits of the sum value. Go to the editor
-Click me to see the sample solution
+64. Write a C++ program to compute the sum of the two given integers and count the number of digits of the sum value. 
 
-65. Write a C++ program to check whether given length of three side form a right triangle. Go to the editor
-Click me to see the sample solution
+```cpp
+#include<iostream>
+#include<string>
 
-66. Write a C++ program to add all the numbers from 1 to a given number. Go to the editor
-Add 1 to 4: 10
-Add 1 to 100: 5050
-Click me to see the sample solution
+using namespace std;
+int main()
+{
+    int n1, n2, sum;
+    cout<<"Enter first number: ";
+    cin>>n1;
+    cout<<"Enter second number: ";
+    cin>>n2;
+    sum = n1 + n2;
+    string sums = to_string(sum);
+    int len = sums.size();
+    cout<<"Sum of the given numbers: "<<sum<<endl;
+    cout<<"Number of digits in the sum: "<<len<<endl;
+}
+```
+
+65. Write a C++ program to check whether given length of three side form a right triangle. 
+
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int a, b, c;
+    cout<<"Enter length of first side: ";
+    cin>>a;
+    cout<<"Enter length of second side: ";
+    cin>>b;
+    cout<<"Enter length of third side: ";
+    cin>>c;
+    
+    a = a*a;
+    b = b*b;
+    c = c*c;
+    if (a == b + c || b == c + d || c == a + b)
+    {
+        cout<<"Yes, They form a right Triangle."<<endl;
+        return 0;
+    }
+    cout<<"No, They can't form a right Triangle."<<endl;
+    return -1;
+
+}
+```
+66. Write a C++ program to add all the numbers from 1 to a given number. 
+
+```cpp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n, sum;
+    cout<<"Enter number to which summation is done: ";
+    cin>>n;
+    for (int i = 1; i < n+1; i++)
+    {
+        sum += i;
+    }
+    cout<<"Adding 1 to "<<n<<", we get: "<<sum<<endl;
+}
+```
 
 67. Write a C++ program to which prints the central coordinate and the radius of a circumscribed circle of a triangle which is created by three points on the plane surface. Go to the editor
 Click me to see the sample solution
@@ -902,9 +984,21 @@ Click me to see the sample solution
 Click me to see the sample solution
 
 +
-83. Write a C++ program to convert a given number into hours and minutes. Separate the number of hours and minutes with a colon. Go to the editor
-For example if a given number is 67 the output should be 1:7
-Click me to see the sample solution
+83. Write a C++ program to convert a given number into hours and minutes. Separate the number of hours and minutes with a colon. 
+
+```cpp
+#include<iostream>
+using namespace std;
+int main(void)
+{
+    int min, hr, mi;
+    cout<<"Enter total minutes: ";
+    cin>>min;
+    hr = min%60;
+    mi = min - (hr*60);
+    cout<<hr<<":"<<mi<<endl;
+}
+```
 
 84. Write a C++ program to check whether the sequence of the numbers in a given array is a "Arithmetic" or "Geometric" sequence. Return -1 if the sequenc is not "Arithmetic" or "Geometric". Go to the editor
 From Wikipedia
