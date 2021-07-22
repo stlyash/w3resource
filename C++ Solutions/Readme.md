@@ -371,34 +371,46 @@ The temperature in Kelvin : 300
 The temperature in Fahrenheit : 80.33
 Click me to see the sample solution
 
-25. Write a program in C++ to convert temperature in Kelvin to Celsius. Go to the editor
-Sample Output:
-Convert temperature in Kelvin to Celsius :
-------------------------------------------------
-Input the temperature in Kelvin : 300
-The temperature in Kelvin : 300
-The temperature in Celsius : 26.85
+25. Write a program in C++ to convert temperature in Kelvin to Celsius.
+```cpp
+ #include<iostream>
+using namespace std;
+int main()
+{    
+    int k;
+    cout<<"Enter Temperature in Kelvin: ";
+    cin>>k;
+    cout<<"The temperature in Kelvin: "<<k<<endl;
+    cout<<"The temperature in Celcius: "<<k-273.15<<endl;
+}
+```
+26. Write a program in C++ to convert temperature in Fahrenheit to Kelvin.
 
-Click me to see the sample solution
-
-26. Write a program in C++ to convert temperature in Fahrenheit to Kelvin. Go to the editor
-Sample Output:
-Convert temperature in Fahrenheit to Kelvin :
----------------------------------------------------
-Input the temperature in Fahrenheit : 80.33
-The temperature in Fahrenheit : 80.33
-The temperature in Kelvin : 300
-Click me to see the sample solution
-
-27. Write a program in C++ to convert temperature in Celsius to Kelvin. Go to the editor
-Sample Output:
-Convert temperature in Celsius to Kelvin :
----------------------------------------------------
-Input the temperature in Celsius : 26.85
-The temperature in Celsius : 26.85
-The temperature in Kelvin : 300
-Click me to see the sample solution
-
+```cpp
+ #include<iostream>
+using namespace std;
+int main()
+{    
+    int f;
+    cout<<"Enter Temperature in Fahrenheit: ";
+    cin>> f;
+    cout<<"The temperature in Fahrenheit: "<< f <<endl;
+    cout<<"The temperature in Kelvin: "<< (f − 32) × 5/9 + 273.15 <<endl;
+}
+```
+27. Write a program in C++ to convert temperature in Celsius to Kelvin.
+```cpp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int c;
+    cout << "Input the temperature in Celsius: ";
+    cin >> c;
+    cout << "The temperature in Celsius: "<< c << endl;
+    cout << "The temperature in Kelvin: "<< c + 273.15<< endl;
+}
+```
 28. Write a program in C++ to find the area of Scalene Triangle. Go to the editor
 Sample Output:
 Find the area of Scalene Triangle :
@@ -508,23 +520,19 @@ The series are:
 5 4 2 7 11 10 8 13 17 16 14 19 23 22 20 25 29 28 26 31 35 34 32 37 41 4 0 38 43 47 46 44 49
 Click me to see the sample solution
 
-38. Write a program in C++ that takes a number as input and prints its multiplication table upto 10. Go to the editor
-Sample Output:
-Print the multiplication table of a number upto 10:
---------------------------------------------------------
-Input a number: 5
-5 x 1 = 5
-5 x 2 = 10
-5 x 3 = 15
-5 x 4 = 20
-5 x 5 = 25
-5 x 6 = 30
-5 x 7 = 35
-5 x 8 = 40
-5 x 9 = 45
-5 x 10 = 50
-Click me to see the sample solution
-
+38. Write a program in C++ that takes a number as input and prints its multiplication table upto 10.
+```cpp
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    for (int i = 1; i < 11; i++)
+    {
+        cout<< n << " x " << i << " = "<< (n * i) << endl;
+    }
+}
+```
 39. Write a program in C++ to print the following pattern. Go to the editor
 Sample Output:
  xxxxx                                                                                                        
